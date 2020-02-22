@@ -68,9 +68,8 @@ def compute_doc_lengths(index):
 			wtd = 1 + np.log10(tf)
 			if doc not in doc_lengths:
 				doc_lengths[doc] = []
-				doc_lengths[doc].append(wtd)
-			else:
-				doc_lengths[doc].append(wtd)
+
+			doc_lengths[doc].append(wtd)
 
 	for doc_id, lis in doc_lengths.items():
 		doc_lengths[doc_id] = (np.array(lis)**2).sum()
