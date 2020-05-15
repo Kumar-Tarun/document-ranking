@@ -1,5 +1,9 @@
-This repository is our submission to Assignment-2 for the course Information Retrieval (CS F469) offered 2nd semester 2019-2020 at BITS Pilani, Pilani Campus.
+# About
+This repository is our submission to Assignment-2 for the course **Information Retrieval (CS F469)** offered 2nd semester 2019-2020 at BITS Pilani, Pilani Campus.
 
+It's basically a **TF-IDF vector space model** to rank documents wrt queries with some additional improvements - **spelling correction** on queries and **bigram index** to better answer phrasal queries.
+
+## Use
 To create inverted-index and other data structures, run ```python3 util.py```
 
 1. Enter path to corpus file (example **wiki_02** file above)
@@ -17,7 +21,7 @@ To query the index, run ```python3 test_queries.py```
 3. To query against original index with spelling correction (improvement1), enter 2 (again should have files)
 4. To query against combined index, enter 3 (should have all files from construction code option 2)
 
-Note:
+## Note
 * In the test_queries.py file, the names of the files to be loaded are specified in ```load_files()``` function.
 * The structure of corpus file is:
 ```html
